@@ -15,18 +15,8 @@ module.exports = {
     schema: null
   },
 
-  create: (context) => ({
-    'FunctionDeclaration VariableDeclarator': node => {
-      const variableName = node.id.name;
-      if(!isCamelCase(variableName)) {
-        context.report({
-          node,
-          message: `Variable name ${variableName} is not in camel case`
-        })
-      }
-    },
-
-    'ArrowFunctionExpression VariableDeclarator': node => {
+  create: context => ({
+    ':matches(FunctionDeclaration VariableDeclarator, ArrowFunctionExpression VariableDeclarator)': node => {
       const variableName = node.id.name;
       if(!isCamelCase(variableName)) {
         context.report({
