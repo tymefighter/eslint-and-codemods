@@ -9,7 +9,7 @@ const ruleTester = new RuleTester({
   parserOptions: { ecmaVersion: 6, sourceType: 'module', ecmaFeatures: { jsx: true } } 
 });
 
-ruleTester.run('no-if-statement-without-block', rule, {
+ruleTester.run('no-prop-forwarding', rule, {
   valid: [
     {
       code:
