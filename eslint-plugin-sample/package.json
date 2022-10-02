@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-sample",
+  "version": "1.0.0",
+  "description": "Sample ESLint plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "author": "Ahmed Zaheer Dadarkar",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "mocha": "^10.0.0"
+  }
+}
