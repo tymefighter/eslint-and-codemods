@@ -1,0 +1,15 @@
+{
+  "plugins": ["sample"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "sample/only-camel-case-vars": 1,
+    "sample/no-if-statement-without-block": 2,
+    "sample/no-prop-forwarding": 1,
+    "sample/disable-import-paths": [
+      2,
+      [
+        "deprecated/components"
+      ]
+    ]
+  }
+}
