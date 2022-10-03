@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 // Components
 import { User } from 'components/user';
+import { Note } from 'deprecated/components';
 
 const USER = {
   id: 'MOCK_USER',
@@ -31,6 +32,7 @@ export const App = (): JSX.Element => {
       {isUserShown ? (
         <User showContactDetails user={USER} />
       ) : null}
+      <Note />
     </div>
   )
 }

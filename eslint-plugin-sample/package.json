@@ -2,7 +2,7 @@
   "name": "eslint-plugin-sample",
   "version": "1.0.0",
   "description": "Sample ESLint plugin",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
   },
