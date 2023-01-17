@@ -1,4 +1,4 @@
-const { __, __unknownT } = require('./utils');
+const { __ } = require('./utils');
 const { Logger, LOG_LEVELS } = require('./logger');
 
 const errorLogger = new Logger(LOG_LEVELS.ERROR);
