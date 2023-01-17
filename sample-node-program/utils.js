@@ -4,7 +4,7 @@ function __(inputString) {
 }
 
 // Colors the input string in green
-const __unknownT = function() {
+const __unknownT = function(inputString) {
   return `\x1b[32m${inputString}\x1b[0m`
 }
 
